@@ -20,9 +20,9 @@ public class FloatDoubleExample {
 		
 		
 		int var6 =300000;
-		double var7 = 3e6;
-		float var8 = 3e6F;
-		double var9 = 2e-3;
+		double var7 = 3e6;  // 10에 6승
+		float var8 = 3e6F;	// 10에 6승
+		double var9 = 2e-3; // 10에 -3승 소수정 자리
 		System.out.println("var6: " + var6);
 		System.out.println("var7: " + var7);
 		System.out.println("var8: " + var8);
