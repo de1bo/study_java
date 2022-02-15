@@ -22,11 +22,17 @@ public class Reference {
 //		String : 문자열 저장을 위한 객체
 		String str1= null;
 		String str2 = "";
+		String str3;
 		
 		if(str1 ==str2) {	// 주소값 비교
 			
 		}
 		str1.equals(str2); // 문자열 비교
+		
+//		배열 : 동일 데이터들의 집합
+//		예) 1학년 2반 학생들의 수학 성적 (15명)
+		
+
 	}
 
 }
