@@ -6,7 +6,7 @@ public class ArrayCreateByValueListExample1 {
 		// TODO Auto-generated method stub
 
 		
-//		int[] score;	// 선언
+//		int[] score;	// 선언 아래와 같은 뜻이지만 위에거를 선호
 //		
 //		int score2[];	// 선언
 //		
