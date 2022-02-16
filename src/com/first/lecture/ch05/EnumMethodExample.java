@@ -1,46 +1,51 @@
 package com.first.lecture.ch05;
 
-import java.util.Calendar;
-
 public class EnumMethodExample {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-//		Week abc = Week.MONDAY;		// String이 아닌 Week라고 표현해야함
-//		Week def = Week.SUNDAY;
-//		
-//		System.out.println(abc);
-//		System.out.println(def);	// 
+		//name() 메소드
+		Week today = Week.SUNDAY;
 		
-		Week today = null;
 		
-		Calendar cal = Calendar.getInstance();
-		int week = cal.get(Calendar.DAY_OF_WEEK);
+		String name = today.name();
+		System.out.println(name);
 		
-		switch(week) {
-		case 1:
-			today = Week.SUNDAY; break;
-		case 2:
-			today = Week.MONDAY; break;
-		case 3:
-			today = Week.TUESDAY; break;
-		case 4:
-			today = Week.WEDESDAY; break;
-		case 5:
-			today = Week.THURSDAY; break;
-		case 6:
-			today = Week.FRIDAY; break;
-		case 7:
-			today = Week.SATURDAY; break;
+		//ordinal() 메소드
+		int ordinal = today.ordinal();
+		System.out.println(ordinal);
+
+		//compareTo() 메소드
+		Week day1 = Week.MONDAY;
+		Week day2 = Week.WEDESDAY;
+		int result1 = day1.compareTo(day2);
+		int result2 = day2.compareTo(day1);
+		System.out.println(result1);
+		System.out.println(result2);
+
+		//valueOf() 메소드
+		/*Week weekDay = Week.valueOf("SUNDAY");
+		if(weekDay == Week.SATURDAY || weekDay == Week.SUNDAY) {
+			System.out.println("주말 이군요");
+		} else {
+			System.out.println("평일 이군요");
+		}*/
+		
+		if(args.length == 1) {
+			String strDay = args[0];
+			Week weekDay = Week.valueOf(strDay);
+			if(weekDay == Week.SATURDAY || weekDay == Week.SUNDAY) {
+				System.out.println("주말 이군요");
+			} else {
+				System.out.println("평일 이군요");
+			}
 		}
 		
-		System.out.println("오늘 요일: " + today);
-		
-		if(today == Week.SUNDAY) {
-			System.out.println("일요일에는 축구를 합니다");
-		} else {
-			System.out.println("열심히 자바 공부합니다.");
+		//values() 메소드
+		Week[] days = Week.values();
+		for(Week day : days) {
+			System.out.println(day);
 		}
 	}
 
