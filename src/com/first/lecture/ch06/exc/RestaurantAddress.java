@@ -1,4 +1,4 @@
-package com.first.lecture.ch06;
+package com.first.lecture.ch06.exc;
 
 public class RestaurantAddress {
 

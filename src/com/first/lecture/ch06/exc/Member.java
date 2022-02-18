@@ -1,4 +1,4 @@
-package com.first.lecture.ch06;
+package com.first.lecture.ch06.exc;
 
 import java.util.Date;
 
@@ -14,4 +14,18 @@ public class Member {
 	Date ifmmRegDate;
 	Integer ifmmGenderCd= 0;
 
+	
+	// method
+	
+//	등록, 저장
+	public void save() {
+		
+	}
+	
+//	삭제
+	public void delete() {
+		
+	}
+	
+	
 }
