@@ -38,18 +38,17 @@ public class Test2 {
 		}
 
 		
-		  for (int i=0; i<=5; i++) {
-		  
-		  num = (int) (Math.random() * (45 -1 +1 ) + 1); System.out.println(+num);
-		  
-		  
-		  if (num != num) { num = (int) (Math.random() * (45 -1 +1 ) + 1); } else {
-		  System.out.println(+num); }
-		  
+//		  for (int i=0; i<=5; i++) {
+//		  
+//		  num = (int) (Math.random() * (45 -1 +1 ) + 1); System.out.println(+num);
+//		  
+//		  
+//		  if (num != num) { num = (int) (Math.random() * (45 -1 +1 ) + 1); } else {
+//		  System.out.println(+num); }
+//	}
 		  
 		  
 		  }
 		 
 
 	}
-}

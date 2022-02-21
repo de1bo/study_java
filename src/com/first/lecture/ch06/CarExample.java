@@ -7,6 +7,8 @@ public class CarExample {
 
 		Car car = new Car();
 		
+		Student student = new Student();
+		
 		// 객체 접근 연산자를 사용하여 car 객체변수의 값을 참조
 		System.out.println("company: " + car.company);
 		System.out.println("model: " + car.model);
@@ -30,7 +32,6 @@ public class CarExample {
 		} else {
 			System.out.println("문제가 없습니다");
 		}
-		
 		return 1;
 	}
 
