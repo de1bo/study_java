@@ -1,6 +1,6 @@
 package com.first.lecture.ch08;
 
-public interface RemoteControl {
+public interface RemoteControl{
 
 	int MAX_VOLUME = 10;		// public static final 생략되어있음
 	int MIN_VOLUME = 0;
